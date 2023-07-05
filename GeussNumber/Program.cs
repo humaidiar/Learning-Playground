@@ -1,8 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using System;
 
-class Program{
-  static void Main(string[] args){
+class GeusNumber{
+  static void Main(){
     GetAppInfo();
     GreetUser();
     while(true){
@@ -10,7 +9,7 @@ class Program{
     //  int correctNumber = 7;
 
     // Create new random object
-    Random random = new Random();
+    Random random = new();
     int correctNumber = random.Next(1,10);
 
     // Init guess var
@@ -24,7 +23,7 @@ class Program{
         string? input = Console.ReadLine();
         //checking input whether number or string?
         if(!int.TryParse(input, out guess)){
-          PrintColorMessage(ConsoleColor.Red, "Please enter actual number!");
+          PrintColorMessage(ConsoleColor.Red, "Please enter actual number");
           continue;
         }
         //conver string to number for input
@@ -32,7 +31,7 @@ class Program{
         
 
         if(guess != correctNumber){
-          PrintColorMessage(ConsoleColor.Red, "Please enter actual number!");
+          PrintColorMessage(ConsoleColor.Red, "Please try again!");
         }
 
     };
@@ -45,7 +44,7 @@ class Program{
     Console.WriteLine("Play Again ? [Y or N]");
 
     //Get the answer
-      string answer = Console.ReadLine().ToUpper();
+      string? answer = Console.ReadLine().ToUpper();
 
       if(answer == "Y"){
         continue;
