@@ -28,3 +28,18 @@
 /Users/humaidiridwan/Doshotz/Dev/Learning Playground/GeussNumber/obj/Debug/net7.0/GeussNumber.pdb
 /Users/humaidiridwan/Doshotz/Dev/Learning Playground/GeussNumber/obj/Debug/net7.0/GeussNumber.genruntimeconfig.cache
 /Users/humaidiridwan/Doshotz/Dev/Learning Playground/GeussNumber/obj/Debug/net7.0/ref/GeussNumber.dll
+/Users/humaidiridwan/Doshotz/Dev/Learning-Playground/GeussNumber/bin/Debug/net7.0/GeussNumber
+/Users/humaidiridwan/Doshotz/Dev/Learning-Playground/GeussNumber/bin/Debug/net7.0/GeussNumber.deps.json
+/Users/humaidiridwan/Doshotz/Dev/Learning-Playground/GeussNumber/bin/Debug/net7.0/GeussNumber.runtimeconfig.json
+/Users/humaidiridwan/Doshotz/Dev/Learning-Playground/GeussNumber/bin/Debug/net7.0/GeussNumber.dll
+/Users/humaidiridwan/Doshotz/Dev/Learning-Playground/GeussNumber/bin/Debug/net7.0/GeussNumber.pdb
+/Users/humaidiridwan/Doshotz/Dev/Learning-Playground/GeussNumber/obj/Debug/net7.0/GeussNumber.csproj.AssemblyReference.cache
+/Users/humaidiridwan/Doshotz/Dev/Learning-Playground/GeussNumber/obj/Debug/net7.0/GeussNumber.GeneratedMSBuildEditorConfig.editorconfig
+/Users/humaidiridwan/Doshotz/Dev/Learning-Playground/GeussNumber/obj/Debug/net7.0/GeussNumber.AssemblyInfoInputs.cache
+/Users/humaidiridwan/Doshotz/Dev/Learning-Playground/GeussNumber/obj/Debug/net7.0/GeussNumber.AssemblyInfo.cs
+/Users/humaidiridwan/Doshotz/Dev/Learning-Playground/GeussNumber/obj/Debug/net7.0/GeussNumber.csproj.CoreCompileInputs.cache
+/Users/humaidiridwan/Doshotz/Dev/Learning-Playground/GeussNumber/obj/Debug/net7.0/GeussNumber.dll
+/Users/humaidiridwan/Doshotz/Dev/Learning-Playground/GeussNumber/obj/Debug/net7.0/refint/GeussNumber.dll
+/Users/humaidiridwan/Doshotz/Dev/Learning-Playground/GeussNumber/obj/Debug/net7.0/GeussNumber.pdb
+/Users/humaidiridwan/Doshotz/Dev/Learning-Playground/GeussNumber/obj/Debug/net7.0/GeussNumber.genruntimeconfig.cache
+/Users/humaidiridwan/Doshotz/Dev/Learning-Playground/GeussNumber/obj/Debug/net7.0/ref/GeussNumber.dll

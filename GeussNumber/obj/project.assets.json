@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/humaidiridwan/Doshotz/Dev/Learning Playground/GeussNumber/GeussNumber.csproj",
+      "projectUniqueName": "/Users/humaidiridwan/Doshotz/Dev/Learning-Playground/GeussNumber/GeussNumber.csproj",
       "projectName": "GeussNumber",
-      "projectPath": "/Users/humaidiridwan/Doshotz/Dev/Learning Playground/GeussNumber/GeussNumber.csproj",
+      "projectPath": "/Users/humaidiridwan/Doshotz/Dev/Learning-Playground/GeussNumber/GeussNumber.csproj",
       "packagesPath": "/Users/humaidiridwan/.nuget/packages/",
-      "outputPath": "/Users/humaidiridwan/Doshotz/Dev/Learning Playground/GeussNumber/obj/",
+      "outputPath": "/Users/humaidiridwan/Doshotz/Dev/Learning-Playground/GeussNumber/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/humaidiridwan/.nuget/NuGet/NuGet.Config"
