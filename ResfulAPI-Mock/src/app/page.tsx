@@ -1,3 +1,5 @@
+import { revalidateTag } from 'next/cache'
+
 export interface Product {
   id?: number
   product: string
@@ -9,26 +11,35 @@ export default async function Home() {
     'https://64a7731a096b3f0fcc814f7f.mockapi.io/products',
     {
       cache: 'no-cache',
+      next: {
+        tags: ['products'],
+      },
     }
   )
 
   const products: Product[] = await res.json()
 
   const addProduct = async (e: FormData) => {
+    'use server'
     const product = e.get('product')?.toString()
     const price = e.get('price')?.toString()
 
     if (!product || !price) return
 
     const newProduct: Product = {
-      product: product,
-      price: price,
+      product,
+      price,
     }
-
+    // Do sever mutation
     await fetch('https://64a7731a096b3f0fcc814f7f.mockapi.io/products', {
       method: 'POST',
       body: JSON.stringify(newProduct),
+      headers: {
+        'Content-Type': 'application/json', // Important to Post New Data as JSON
+      },
     })
+
+    revalidateTag('products') //re-update the server
   }
 
   return (
