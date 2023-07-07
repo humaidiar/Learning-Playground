@@ -133,9 +133,9 @@
     }
   },
   "entryCSSFiles": {
+    "/Users/humaidiridwan/Doshotz/Dev/Learning-Playground/ResfulAPI-Mock/src/app/page": [],
     "/Users/humaidiridwan/Doshotz/Dev/Learning-Playground/ResfulAPI-Mock/src/app/layout": [
       "static/css/app/layout.css"
-    ],
-    "/Users/humaidiridwan/Doshotz/Dev/Learning-Playground/ResfulAPI-Mock/src/app/page": []
+    ]
   }
 }

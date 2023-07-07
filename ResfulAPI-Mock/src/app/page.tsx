@@ -1,10 +1,6 @@
-import { revalidateTag } from 'next/cache'
+import { addProduct } from '../../actions/serverActions'
 
-export interface Product {
-  id?: number
-  product: string
-  price: string
-}
+import { Product } from '../../typings'
 
 export default async function Home() {
   const res = await fetch(
@@ -12,38 +8,14 @@ export default async function Home() {
     {
       cache: 'no-cache',
       next: {
-        tags: ['products'],
+        tags: ['products'], // for re-fetch data
       },
     }
   )
-
   const products: Product[] = await res.json()
 
-  const addProduct = async (e: FormData) => {
-    'use server'
-    const product = e.get('product')?.toString()
-    const price = e.get('price')?.toString()
-
-    if (!product || !price) return
-
-    const newProduct: Product = {
-      product,
-      price,
-    }
-    // Do sever mutation
-    await fetch('https://64a7731a096b3f0fcc814f7f.mockapi.io/products', {
-      method: 'POST',
-      body: JSON.stringify(newProduct),
-      headers: {
-        'Content-Type': 'application/json', // Important to Post New Data as JSON
-      },
-    })
-
-    revalidateTag('products') //re-update the server
-  }
-
   return (
-    <main className="">
+    <main className="relative">
       <h1 className="text-3xl font-bold text-center">Product Warehouse</h1>
 
       <form
@@ -72,7 +44,7 @@ export default async function Home() {
         {products.map((product) => (
           <div key={product.id} className="p-5 shadow rounded-md">
             <p>{product.product}</p>
-            <p>{product.price}</p>
+            <p>NZD {product.price}</p>
           </div>
         ))}
       </div>
