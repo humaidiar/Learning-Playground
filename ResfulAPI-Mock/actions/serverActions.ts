@@ -25,3 +25,11 @@ export const addProduct = async (e: FormData) => {
   revalidateTag('products') //re-update the server
   // revalidateTag("/") => all the tags Fetching
 }
+
+export const deleteProduct = async (id: number) => {
+  await fetch(`https://64a7731a096b3f0fcc814f7f.mockapi.io/products/${id}`, {
+    method: 'DELETE',
+  })
+
+  revalidateTag('products')
+}

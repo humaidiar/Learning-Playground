@@ -1,4 +1,4 @@
-import { addProduct } from '../../actions/serverActions'
+import { addProduct, deleteProduct } from '../../actions/serverActions'
 
 import { Product } from '../../typings'
 
@@ -45,6 +45,7 @@ export default async function Home() {
           <div key={product.id} className="p-5 shadow rounded-md">
             <p>{product.product}</p>
             <p>NZD {product.price}</p>
+            <p>{product.id}</p>
           </div>
         ))}
       </div>
