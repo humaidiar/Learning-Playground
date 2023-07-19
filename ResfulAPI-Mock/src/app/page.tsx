@@ -1,5 +1,4 @@
 import { addProduct, deleteProduct } from '../../actions/serverActions'
-
 import { Product } from '../../typings'
 
 export default async function Home() {
@@ -45,7 +44,7 @@ export default async function Home() {
           <div key={product.id} className="p-5 shadow rounded-md">
             <p>{product.product}</p>
             <p>NZD {product.price}</p>
-            <p>{product.id}</p>
+            {/* <button onClick={() => deleteProduct(Number(product.id))}></button> */}
           </div>
         ))}
       </div>

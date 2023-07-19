@@ -29,7 +29,9 @@ export const addProduct = async (e: FormData) => {
 export const deleteProduct = async (id: number) => {
   await fetch(`https://64a7731a096b3f0fcc814f7f.mockapi.io/products/${id}`, {
     method: 'DELETE',
+    headers: {
+      'Content-Type': 'application/json',
+    },
   })
-
   revalidateTag('products')
 }
